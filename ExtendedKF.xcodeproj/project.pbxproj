@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CC72C6A5EA1E4CD094419195 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC2359B929074C9091D3C79D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				AF8FA7AF9E3947ADBE27A6CC /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DD1FEBD3502A4388BA7EA859 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EFCFE8587C344CAB9D04B797 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				47601612C47642E290E75748 /* CMake Rules */,
+			);
+			dependencies = (
+				817C82D1D5C94C50BBB94802 /* PBXTargetDependency */,
+				75F9BAE95F56456AB7CB00EF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3FECBFD416954E4A81721327 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 28E6453FA6E648DDA2C26563 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/main.cpp */; };
+		6CE2A4B2B2774C518541899E /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */ = {isa = PBXBuildFile; fileRef = 37D04884796B4FCCA64BFAA2 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */; };
+		7EC371F8E0A245DF9AFFA820 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */ = {isa = PBXBuildFile; fileRef = DE52BAF9D34C4EC6BEB2DE87 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */; };
+		D183AD02DE954D0ABC8B2360 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */ = {isa = PBXBuildFile; fileRef = 1B995CED92BC45BCA3F6F341 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */; };
+		E45148D7E0CC4AE48F82CADE /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5DC518C551F14F3D8721E198 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0152D9568588440C968C62A9 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		3FB8A569CD3844F49E81484D /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EBC923F79420496FAA7E863F /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EEC0920E31C84A259431E782 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		F9C8828E67734EBDABDCFA0B = {
+			isa = PBXBuildStyle;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		24D53D426ECE4443BA99C2EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9E4896CF2943D2B808C594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC72C6A5EA1E4CD094419195;
+			remoteInfo = ZERO_CHECK;
+		};
+		3584899A20A34F0492395EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9E4896CF2943D2B808C594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3050A555981F478590300ACC;
+			remoteInfo = ExtendedKF;
+		};
+		CBA6E124DA7748478A70E69B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9E4896CF2943D2B808C594 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC72C6A5EA1E4CD094419195;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02805BA9C61445A2B7401696 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0823C23946DE4A518E3F38FD /* ExtendedKF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ExtendedKF; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B995CED92BC45BCA3F6F341 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kalman_filter.cpp; path = src/kalman_filter.cpp; sourceTree = SOURCE_ROOT; };
+		28E6453FA6E648DDA2C26563 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		37D04884796B4FCCA64BFAA2 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tools.cpp; path = src/tools.cpp; sourceTree = SOURCE_ROOT; };
+		5DC518C551F14F3D8721E198 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A4A45CA4B651421A825FE0D1 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DE52BAF9D34C4EC6BEB2DE87 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FusionEKF.cpp; path = src/FusionEKF.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		064CCFF5A68E4DE5B13B4B6D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				5982452D53034A49B2920CA1 /* CMake Rules */,
+				02805BA9C61445A2B7401696 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3885CA0325B348CF9639BB43 /* ExtendedKF */ = {
+			isa = PBXGroup;
+			children = (
+				CBA99E35FDF847EF820658F1 /* Source Files */,
+				5DC518C551F14F3D8721E198 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */,
+			);
+			name = ExtendedKF;
+			sourceTree = "<group>";
+		};
+		4B3956717BBA4D3A8E35CDC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0823C23946DE4A518E3F38FD /* ExtendedKF */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E904CC948C441C58EB5DD2B = {
+			isa = PBXGroup;
+			children = (
+				51A7B02F4C4A4720BC9F3022 /* Sources */,
+				ECBBD9E9068D43A7BC0EF070 /* Resources */,
+				4B3956717BBA4D3A8E35CDC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51A7B02F4C4A4720BC9F3022 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3885CA0325B348CF9639BB43 /* ExtendedKF */,
+				064CCFF5A68E4DE5B13B4B6D /* ALL_BUILD */,
+				DFED9A5F00454BABABA7D904 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5982452D53034A49B2920CA1 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CBA99E35FDF847EF820658F1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE52BAF9D34C4EC6BEB2DE87 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */,
+				1B995CED92BC45BCA3F6F341 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */,
+				28E6453FA6E648DDA2C26563 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/main.cpp */,
+				37D04884796B4FCCA64BFAA2 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DFED9A5F00454BABABA7D904 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				E5CE8A0861B14952AC0D4270 /* CMake Rules */,
+				A4A45CA4B651421A825FE0D1 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		E5CE8A0861B14952AC0D4270 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		ECBBD9E9068D43A7BC0EF070 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3050A555981F478590300ACC /* ExtendedKF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7C874A34A6343DB81B39F84 /* Build configuration list for PBXNativeTarget "ExtendedKF" */;
+			buildPhases = (
+				47D4946737D44391A8BCCF0E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F6D26237B2454EB7493B56 /* PBXTargetDependency */,
+			);
+			name = ExtendedKF;
+			productName = ExtendedKF;
+			productReference = 0823C23946DE4A518E3F38FD /* ExtendedKF */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E9E4896CF2943D2B808C594 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 9FF427CDAAC745CA81B321DD /* Build configuration list for PBXProject "ExtendedKF" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				3FB8A569CD3844F49E81484D /* Debug */,
+				EBC923F79420496FAA7E863F /* Release */,
+				EEC0920E31C84A259431E782 /* MinSizeRel */,
+				0152D9568588440C968C62A9 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 4E904CC948C441C58EB5DD2B;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				DD1FEBD3502A4388BA7EA859 /* ALL_BUILD */,
+				3050A555981F478590300ACC /* ExtendedKF */,
+				CC72C6A5EA1E4CD094419195 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47601612C47642E290E75748 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project -f /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8A8F9F99799E408A8F44A5E1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		AF8FA7AF9E3947ADBE27A6CC /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project -f /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C69827C652BB4FCB9D3B1FEC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47D4946737D44391A8BCCF0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC371F8E0A245DF9AFFA820 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */,
+				D183AD02DE954D0ABC8B2360 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */,
+				3FECBFD416954E4A81721327 /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/main.cpp */,
+				6CE2A4B2B2774C518541899E /* /Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74F6D26237B2454EB7493B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC72C6A5EA1E4CD094419195 /* ZERO_CHECK */;
+			targetProxy = CBA6E124DA7748478A70E69B /* PBXContainerItemProxy */;
+		};
+		75F9BAE95F56456AB7CB00EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC72C6A5EA1E4CD094419195 /* ZERO_CHECK */;
+			targetProxy = 24D53D426ECE4443BA99C2EF /* PBXContainerItemProxy */;
+		};
+		817C82D1D5C94C50BBB94802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3050A555981F478590300ACC /* ExtendedKF */;
+			targetProxy = 3584899A20A34F0492395EDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04D2245E56174C1788863633 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/build";
+			};
+			name = MinSizeRel;
+		};
+		05AD9CA5AA2741D79BB7E7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ExtendedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		16C3CB23345C448A8D376153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		28A318E86BD8498BBC3E2BEA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		40C1C175F419407D894A8AFC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		410140D12604448DB3537BA5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/build";
+			};
+			name = RelWithDebInfo;
+		};
+		41D0FB7A39D649FEB4F7359B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ExtendedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4E27C8B8816D4130945832ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		757E6624B5B34A499E58FBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ExtendedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		765E4005C3BA4C728D95DDEA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8C4B02DDF7204744BB4193D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AF2297B5AB2F430F9A50A9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B40CA394AD804A178D3AB704 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B906D3BE878E414CA2CA410C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/build";
+			};
+			name = Release;
+		};
+		CA79E7D4962E40F9BD609B3A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   -std=c++0x";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ExtendedKF;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E887E621FAF94E13A1462604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/mounteverest/Desktop/CarND/Term2/github/CarND-Extended-Kalman-Filter-Project/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FF427CDAAC745CA81B321DD /* Build configuration list for PBXProject "ExtendedKF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E887E621FAF94E13A1462604 /* Debug */,
+				B906D3BE878E414CA2CA410C /* Release */,
+				04D2245E56174C1788863633 /* MinSizeRel */,
+				410140D12604448DB3537BA5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC2359B929074C9091D3C79D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2297B5AB2F430F9A50A9F6 /* Debug */,
+				8C4B02DDF7204744BB4193D7 /* Release */,
+				765E4005C3BA4C728D95DDEA /* MinSizeRel */,
+				28A318E86BD8498BBC3E2BEA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E7C874A34A6343DB81B39F84 /* Build configuration list for PBXNativeTarget "ExtendedKF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05AD9CA5AA2741D79BB7E7F4 /* Debug */,
+				757E6624B5B34A499E58FBC3 /* Release */,
+				41D0FB7A39D649FEB4F7359B /* MinSizeRel */,
+				CA79E7D4962E40F9BD609B3A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EFCFE8587C344CAB9D04B797 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C3CB23345C448A8D376153 /* Debug */,
+				4E27C8B8816D4130945832ED /* Release */,
+				B40CA394AD804A178D3AB704 /* MinSizeRel */,
+				40C1C175F419407D894A8AFC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E9E4896CF2943D2B808C594 /* Project object */;
+}
