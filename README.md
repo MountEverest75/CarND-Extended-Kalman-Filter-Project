@@ -1,9 +1,15 @@
-# Extended Kalman Filter Project Starter Code
-Self-Driving Car Engineer Nanodegree Program
+# Self-Driving Car Engineer Nanodegree Program
+## Extended Kalman Filter Project
 
 ---
 
 ## Dependencies
+
+[//]: # (Image References)
+[image1]: ./data/ScatterPlotForSampleFile-1.png
+[image2]: ./data/ScatterPlotForSampleFile-2.png
+[image3]: ./data/ScatterPlotForSampleFile-3.png
+[image4]: ./data/ScatterPlotForSampleFile-4.png
 
 * cmake >= 3.5
  * All OSes: [click here for installation instructions](https://cmake.org/install/)
@@ -20,7 +26,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make` 
+3. Compile: `cmake .. && make`
    * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
 4. Run it: `./ExtendedKF path/to/input.txt path/to/output.txt`. You can find
    some sample inputs in 'data/'.
@@ -32,8 +38,8 @@ We've purposefully kept editor configuration files out of this repo in order to
 keep it as simple and environment agnostic as possible. However, we recommend
 using the following settings:
 
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
+* Indent using spaces
+* Set tab width to 2 spaces (keeps the matrices in source code aligned)
 
 ## Code Style
 
@@ -56,30 +62,92 @@ More information is only accessible by people who are already enrolled in Term 2
 of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/12dd29d8-2755-4b1b-8e03-e8f16796bea8)
 for instructions and the project rubric.
 
-## Hints!
+## Results
+The following results have been observed after executing two tests detailed below on Extended Kalman filter.
+#### 1. RMSE results after running with "sample-laser-radar-measurement-data-1.txt" can be found below:
 
-* You don't have to follow this directory structure, but if you do, your work
-  will span all of the .cpp files here. Keep an eye out for TODOs.
+Input: `sample-laser-radar-measurement-data-1.txt`
 
-## Call for IDE Profiles Pull Requests
+Process:
+`./ExtendedKF ../data/sample-laser-radar-measurement-data-1.txt ../data/output-1.txt`
 
-Help your fellow students!
+Command executed after noise adjustments.
 
-We decided to create Makefiles with cmake to keep this project as platform
-agnostic as possible. Similarly, we omitted IDE profiles in order to we ensure
-that students don't feel pressured to use one IDE or another.
+`./ExtendedKF ../data/sample-laser-radar-measurement-data-1.txt ../data/output-noiseadj-1.txt`
 
-However! We'd love to help people get up and running with their IDEs of choice.
-If you've created a profile for an IDE that you think other students would
-appreciate, we'd love to have you add the requisite profile files and
-instructions to ide_profiles/. For example if you wanted to add a VS Code
-profile, you'd add:
+Output Files: `output-1.txt` and `output-noiseadj-1.txt`
 
-* /ide_profiles/vscode/.vscode
-* /ide_profiles/vscode/README.md
+Results:
 
-The README should explain what the profile does, how to take advantage of it,
-and how to install it.
+Before noise adjustment:
+```
+Accuracy - RMSE:
+0.0651648
+0.0605379
+ 0.533212
+ 0.544193
+```
 
-Regardless of the IDE used, every submitted project must
-still be compilable with cmake and make.
+After noise adjustment:
+```
+Accuracy - RMSE:
+0.0388008
+0.0366848
+  0.41763
+ 0.461049
+ ```
+
+#### 2. RMSE results after running with "sample-laser-radar-measurement-data-2.txt" can be found below:
+
+Input: ```sample-laser-radar-measurement-data-2.txt```
+
+Process: ```./ExtendedKF ../data/sample-laser-radar-measurement-data-2.txt ../data/output-2.txt```
+
+Command executed after noise adjustments.
+
+`./ExtendedKF ../data/sample-laser-radar-measurement-data-2.txt ../data/output-noiseadj-2.txt`
+
+Output File: ```output-2.txt``` and ```output-noiseadj-2.txt```
+
+Results:
+
+```
+Accuracy - RMSE:
+0.185476
+0.190359
+0.487633
+0.816566
+```
+
+After noise adjustment:
+```
+Accuracy - RMSE:
+0.186544
+0.191394
+0.540929
+ 1.13263
+```
+
+Examining the results above indicates that the RMSE values generated are within the acceptable range.
+
+## Analysis
+Performing trace and scatter of results shows that for first sample file there are some outliers by observing the blue lines at the left bottom of the eight shape trace.
+
+![alt text][image1]
+
+This indicates that estimates done by Extended Kalman Filter program are slightly off, however it could be inferred from the graphs that they are closer to actual measurements.
+
+The results from the second sample file show less outliers while comparing EKF estimates with ground truth.
+![alt text][image2]
+
+Although the results are satisfactory testing this approach with more data is desirable to fine tune any deviations.
+
+It has been observed that changing the noise parameters from 9 to 30 improved the results for first sample dataset. The revised scatter plot has been showcased below:
+
+![alt text][image3]
+
+However the EKF process did not show any improvement in estimates using second dataset.
+
+![alt text][image4]
+
+The details of scatter plot can be found in the iPython notebook ekf-visualization.ipynb.
